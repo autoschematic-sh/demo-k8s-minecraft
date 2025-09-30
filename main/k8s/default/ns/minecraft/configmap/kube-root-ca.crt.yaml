@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIBeDCCAR2gAwIBAgIBADAKBggqhkjOPQQDAjAjMSEwHwYDVQQDDBhrM3Mtc2Vy
+    dmVyLWNhQDE3NDY2ODE0MjUwHhcNMjUwNTA4MDUxNzA1WhcNMzUwNTA2MDUxNzA1
+    WjAjMSEwHwYDVQQDDBhrM3Mtc2VydmVyLWNhQDE3NDY2ODE0MjUwWTATBgcqhkjO
+    PQIBBggqhkjOPQMBBwNCAATpTLI5Sr0rVEaQ5/WnpNZOVXvveWypGbnxhcHV31N9
+    peDFJdEjO99fQNSxbUvSahO4ExlUqWtRDlE6Muem2Jkxo0IwQDAOBgNVHQ8BAf8E
+    BAMCAqQwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUEdrltNDyKYcC/A4aY+LF
+    cTs590QwCgYIKoZIzj0EAwIDSQAwRgIhAPO12Nlu3A62++jHnxcbXKt6WAYVKDWW
+    /DDUWvYSwSfkAiEA3bjIgjAFXiGIPOkaB9iZwLG+/0JEzNkHvfoqbxWdj1Y=
+    -----END CERTIFICATE-----
+metadata:
+  annotations:
+    kubernetes.io/description: Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters.
+  name: kube-root-ca.crt
+  namespace: minecraft

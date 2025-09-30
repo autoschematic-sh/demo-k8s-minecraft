@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  eula.txt: |
+    eula=true
+  server.properties: |
+    motd=Autoschematic Demo Server \u2605
+    difficulty=easy
+    gamemode=survival
+    max-players=10
+    online-mode=true
+    view-distance=10
+    allow-nether=false
+    spawn-animals=false
+    spawn-monsters=false
+    enable-command-block=false
+    enforce-secure-profile=false
+    level-seed=
+    pvp=true
+    white-list=false
+    enable-query=false
+    enable-rcon=false
+metadata:
+  namespace: minecraft
+  name: minecraft-config
