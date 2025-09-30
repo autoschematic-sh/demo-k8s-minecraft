@@ -1,0 +1,15 @@
+AutoschematicConfig(
+    prefixes: {
+        "main": Prefix(
+            connectors: [
+                Connector(
+                    shortname: "k8s",
+                    spec: Cargo(
+                        name: "autoschematic-connector-k8s",
+                        version: "0.9.0"
+                    )
+                ),
+            ]
+        )
+    },
+)
